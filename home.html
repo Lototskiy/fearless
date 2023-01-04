@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>Home - Fearless Future page title</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="assets/css/app.css?v=1668790239311" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo"><img src="assets/images/svg/logo-advantage.svg" alt="Images"></div>
+  <div class="preloader-line">
+    <div class="preloader-loading"></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  
+  if (!(document.referrer.indexOf('fearless') == -1) || !(location.href.indexOf('localhost') == -1)) {
+      preloader.remove();
+  }
+  
+  
+  setTimeout(function () {
+      if (preloader) {
+          setTimeout(function () {
+              preloader.classList.add('preloader--hide');
+          }, 2000);
+  
+          setTimeout(function () {
+              preloader.style.display = 'none';
+          }, 3500);
+      }
+  }, 500);
+</script>
+<header class="header" aria-label="Main">
+  <div class="center-wrap">
+    <div class="header__wrap"><a class="main-content" href="#main">Skip to main content</a><a class="header__logo single-anchors img-wrap" href="home.html#home">
+        <div><img src="assets/images/svg/logo.svg" alt="Fearless Future Home"></div></a>
+      <nav class="header__nav mobile--hide">
+        <ul class="header__nav-list" role="menu">
+          <li class="header__nav-item" role="menuitem"><a class="header__nav-link" href="/">About us</a></li>
+          <li class="header__nav-item header__nav-item--drop" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="0"><span class="header__nav-link">Services</span>
+            <ul class="header__drop header__drop--js">
+              <li class="header__drop-item"><a class="header__nav-link" href="">Training</a></li>
+              <li class="header__drop-item"><a class="header__nav-link" href="">Consultancy</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item" role="menuitem"><a class="header__nav-link" href="/team.html">Team</a></li>
+          <li class="header__nav-item" role="menuitem"><a class="header__nav-link" href="/team.html">Impact</a></li>
+          <li class="header__nav-item header__nav-item--drop" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="0"><span class="header__nav-link">Resources</span>
+            <ul class="header__drop header__drop--width header__drop--js">
+              <li class="header__drop-item"><a class="header__nav-link" href="">Learning Materials</a></li>
+              <li class="header__drop-item"><a class="header__nav-link" href="">Podcast</a></li>
+              <li class="header__drop-item"><a class="header__nav-link" href="">Blog</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item" role="menuitem"><a class="header__nav-link" href="/faq.html">F.A.Q.</a></li>
+        </ul>
+      </nav>
+      <div class="header__search">
+        <form class="search" action="/action_page.php">
+          <input class="search__inputs" type="text" aria-label="Search" role="search" tabindex="0">
+          <button class="search__btn" type="submit">
+            <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L12.9056 14.3199Z"></path>
+            </svg>
+          </button>
+        </form>
+      </div><a class="header__btn btn single-anchors mobile--hide" href="home.html#contact">Contact us</a>
+      <button class="header__burger desktop--hide" aria-label="Main Menu" aria-expanded="false">
+        <div></div>
+        <div></div>
+      </button>
+    </div>
+  </div>
+</header>
+    <div id="scrollbar">
+      <main id="main">
+        <section class="main-screen img-parallax at-block main-screen--home" id="home">
+          <picture>
+            <source srcset="assets/images/png/main-screen-img4--mobile.png" media="(max-width: 480px)"><img class="main-screen__bg" src="assets/images/png/main-screen-img4.png" alt="">
+          </picture>
+          <div class="main-screen__popup">
+            <button class="main-screen__popup-close" aria-label="Close popup">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 7.05L16.95 6L12 10.95L7.05 6L6 7.05L10.95 12L6 16.95L7.05 18L12 13.05L16.95 18L18 16.95L13.05 12L18 7.05Z"></path>
+              </svg>
+            </button>
+            <div class="main-screen__popup-wrap">
+              <div class="main-screen__popup-left">
+                <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.75 24H5.25C4.41986 24.0001 3.62117 23.6824 3.01777 23.1123C2.41437 22.5422 2.052 21.7628 2.005 20.934L2 20.75V6.25C1.99993 5.67987 2.2163 5.13098 2.60537 4.71425C2.99444 4.29751 3.52721 4.04402 4.096 4.005L4.25 4H19.75C20.3201 3.99993 20.869 4.2163 21.2858 4.60537C21.7025 4.99444 21.956 5.52721 21.995 6.096L22 6.25V7H23.75C24.3201 6.99993 24.869 7.2163 25.2858 7.60537C25.7025 7.99444 25.956 8.52721 25.995 9.096L26 9.25V20.75C26.0001 21.5801 25.6824 22.3788 25.1123 22.9822C24.5422 23.5856 23.7628 23.948 22.934 23.995L22.75 24H5.25H22.75ZM5.25 22.5H22.75C23.1893 22.5 23.6126 22.3347 23.9357 22.037C24.2588 21.7392 24.4581 21.3309 24.494 20.893L24.5 20.75V9.25C24.5 9.06876 24.4344 8.89366 24.3152 8.75707C24.1961 8.62048 24.0316 8.53165 23.852 8.507L23.75 8.5H22V19.25C22 19.4312 21.9344 19.6063 21.8152 19.7429C21.6961 19.8795 21.5316 19.9684 21.352 19.993L21.25 20C21.0688 20 20.8937 19.9344 20.7571 19.8152C20.6205 19.6961 20.5316 19.5316 20.507 19.352L20.5 19.25V6.25C20.5 6.06876 20.4344 5.89366 20.3152 5.75707C20.1961 5.62048 20.0316 5.53165 19.852 5.507L19.75 5.5H4.25C4.06876 5.50001 3.89366 5.56564 3.75707 5.68477C3.62048 5.80389 3.53165 5.96845 3.507 6.148L3.5 6.25V20.75C3.50002 21.1892 3.66517 21.6123 3.96268 21.9354C4.26019 22.2585 4.6683 22.4579 5.106 22.494L5.25 22.5H22.75H5.25ZM10.246 13.004C10.936 13.004 11.496 13.564 11.496 14.254V17.75C11.496 18.44 10.936 19 10.246 19H6.75C6.06 19 5.5 18.44 5.5 17.75V14.254C5.5 13.564 6.06 13.004 6.75 13.004H10.246ZM14.25 17.5H17.746C17.936 17.5001 18.1189 17.5722 18.2578 17.702C18.3966 17.8317 18.4811 18.0093 18.494 18.1989C18.507 18.3885 18.4475 18.5759 18.3276 18.7233C18.2077 18.8707 18.0362 18.9671 17.848 18.993L17.746 19H14.25C14.06 18.9999 13.8771 18.9278 13.7382 18.798C13.5994 18.6683 13.5149 18.4907 13.502 18.3011C13.489 18.1115 13.5485 17.9241 13.6684 17.7767C13.7883 17.6293 13.9598 17.5329 14.148 17.507L14.25 17.5H17.746H14.25ZM9.997 14.504H7V17.5H9.997V14.504ZM14.25 13.004H17.746C17.936 13.0041 18.1189 13.0762 18.2578 13.206C18.3966 13.3357 18.4811 13.5133 18.494 13.7029C18.507 13.8925 18.4475 14.0799 18.3276 14.2273C18.2077 14.3747 18.0362 14.4711 17.848 14.497L17.746 14.504H14.25C14.0586 14.5059 13.8737 14.4347 13.7332 14.3047C13.5927 14.1748 13.5072 13.9961 13.4941 13.8051C13.4811 13.6142 13.5415 13.4255 13.6631 13.2777C13.7847 13.1298 13.9581 13.0341 14.148 13.01L14.25 13.004H17.746H14.25ZM6.246 8.497H17.746C17.936 8.49706 18.1189 8.56924 18.2578 8.69897C18.3966 8.8287 18.4811 9.0063 18.494 9.19588C18.507 9.38546 18.4475 9.57289 18.3276 9.7203C18.2077 9.86771 18.0362 9.9641 17.848 9.99L17.746 9.997H6.246C6.05606 9.99669 5.87332 9.92433 5.73466 9.79452C5.596 9.66471 5.51175 9.48713 5.49893 9.29762C5.48611 9.10812 5.54567 8.92081 5.66559 8.77351C5.7855 8.6262 5.95683 8.52989 6.145 8.504L6.246 8.497H17.746H6.246Z" fill="#8C697A"></path>
+                </svg>
+              </div>
+              <div class="main-screen__popup-right">
+                <div class="main-screen__popup-content content"> 
+                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                </div><a class="main-screen__popup-link" href="">
+                  <p>Subscribe</p>
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8216 6.76429C12.0316 6.97428 11.8829 7.33333 11.5859 7.33333L2.00016 7.33333C1.63197 7.33333 1.3335 7.6318 1.3335 7.99999C1.3335 8.36818 1.63197 8.66666 2.00016 8.66666L11.586 8.66666C11.8829 8.66666 12.0316 9.02571 11.8217 9.2357L8.19542 12.8619C7.93507 13.1223 7.93507 13.5444 8.19542 13.8047C8.45577 14.0651 8.87788 14.0651 9.13823 13.8047L14.4716 8.4714C14.7319 8.21105 14.7319 7.78894 14.4716 7.5286L9.13823 2.19526C8.87788 1.93491 8.45577 1.93491 8.19542 2.19526C7.93507 2.45561 7.93507 2.87772 8.19542 3.13807L11.8216 6.76429Z" fill="#781E41"></path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="center-wrap">
+            <div class="main-screen__info">
+              <h1 class="at-element main-screen__simple-title" data-at-name="atTitle">Unlearn Inequity Transform The Wolrd</h1>
+              <div class="main-screen__content content at-element" data-at-name="atText"> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ipsum urna in diam mauris.</p>
+              </div>
+              <div class="main-screen__video at-element" data-at-name="atCustom">
+                <!-- video in link start--><a class="video-bl" href="https://www.youtube.com/watch?v=axaqGUxqYBk" target="_blank">
+                  <div class="video-bl__btn img-wrap">
+                    <div><img src="assets/images/svg/play-btn.svg" alt=""></div>
+                  </div>
+                  <div class="video-bl__title">Watch a video</div></a>
+                <!-- video in link end-->
+                <!-- video in video start-->
+                <!-- video in video end-->
+              </div>
+            </div>
+          </div>
+        </section>
+<div class="advantage at-block">
+  <div class="advantage__bg"></div>
+  <div class="advantage__bg advantage__bg--bottom"></div>
+  <div class="center-wrap"> 
+    <div class="advantage__wrap">
+      <div class="advantage__left img-wrap at-element" data-at-name="atCustom">
+        <div><img src="assets/images/svg/logo-advantage.svg" alt=""></div>
+      </div>
+      <div class="advantage__right">
+        <div class="advantage__content content at-element" data-at-name="atText">    
+          <p>Fearless Futures serves daring organisations — across sectors — ready to actively challenge inequities by addressing their roots, intersections, and lived realities. </p>
+          <p>We facilitate transformative equity and inclusion learning experiences, in-person and online, as well as partner with our clients through consultancy in service of designing equitable ecosystems for people and products.</p>
+        </div><a class="advantage__btn btn at-element" href="" data-at-name="atCustom">Explore more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="cooperation at-block">
+  <div class="cooperation__wrap">
+    <div class="cooperation__left">
+      <h2 class="cooperation__title at-element" data-at-name="atTitle">How we do equity and inclusion work with companies</h2>
+      <div class="cooperation__content content at-element" data-at-name="atItemsColumn" data-at-selector=".cooperation__content li, .cooperation__btn" data-at-trigger=".cooperation"> 
+        <ol>
+          <li>Transformative capacity building equity and inclusion learning experiences, virtually and in person</li>
+          <li>Consultancy to design equitable policies, processes and products</li>
+          <li>Both of the above together for deep change across your organisational ecosystem</li>
+        </ol>
+      </div><a class="cooperation__btn btn" href="">Find out more</a>
+    </div>
+    <div class="cooperation__right img-parallax img-wrap">
+      <div>
+        <picture><img src="assets/images/png/cooperation-img.png" alt=""></picture>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services at-block">
+  <div class="center-wrap">
+    <h2 class="services__simple-title simple-title at-element" data-at-name="atTitle">Our Services</h2>
+    <div class="services__wrap">
+      <div class="services__row">
+        <h3 class="services__subtitle">Training</h3>
+        <ul class="services__list" role="list">
+          <li class="services__item" role="listitem"> 
+            <p class="services__item-title">Design for Inclusion (DFI)</p>
+          </li>
+          <li class="services__item" role="listitem"> 
+            <p class="services__item-title">Building Inclusive Cultures (BIC) </p>
+          </li>
+          <li class="services__item" role="listitem"> 
+            <p class="services__item-title">Introductory workshops</p>
+          </li>
+          <li class="services__item" role="listitem"> 
+            <p class="services__item-title">Company-wide bespoke solutions</p>
+          </li>
+          <li class="services__item" role="listitem"> 
+            <p class="services__item-title">E-learning</p>
+          </li>
+          <li class="services__item" role="listitem"> 
+            <p class="services__item-title">Public taster workshops</p>
+          </li>
+        </ul>
+      </div>
+      <div class="services__row">
+        <h3 class="services__subtitle">Consultancy</h3>
+        <ul class="services__list services__list--2" role="list">
+          <li class="services__item" role="listitem"> 
+            <p class="services__item-title">Advisory</p>
+          </li>
+          <li class="services__item" role="listitem"> 
+            <p class="services__item-title">Audits</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="services__btn"> <a class="btn" href="/services.html">Find out more</a></div>
+  </div>
+</section>
+        <div class="quotes at-block">
+          <div class="quotes__wrap quotes__wrap--reverse">
+            <div class="quotes__left">
+              <div class="quotes__left-wrap">
+                <div class="quotes__left-box">
+                  <div class="quotes__left-content content"> 
+                    <blockquote class="at-element" data-at-name="atText">Not everything that is faced can be changed, but nothing can be changed, until it is faced.</blockquote>
+                  </div>
+                  <div class="quotes__left-author at-element" data-at-name="atCustom">James Baldwin</div>
+                </div>
+              </div>
+            </div>
+            <div class="quotes__right img-parallax img-wrap">
+              <div><img src="assets/images/png/quotes-img2.png" alt="James Baldwin"></div>
+            </div>
+          </div>
+        </div>
+<section class="reviews at-block" role="region" aria-roledescription="carousel" aria-label="Our Clients Reviews">
+  <div class="center-wrap"> 
+    <h2 class="reviews__simple-title simple-title at-element" data-at-name="atTitle">Our Clients Reviews</h2>
+    <div class="reviews-slider">
+      <div class="reviews-slider__wrap">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="1 of 5">
+              <div class="reviews-slider__item"> 
+                <div class="reviews-slider__top"> 
+                  <div class="reviews-slider__photo img-wrap">
+                    <div><img src="assets/images/svg/avatar.svg" alt=""></div>
+                  </div>
+                  <div class="reviews-slider__name">Dobrik22</div>
+                  <div class="reviews-slider__date">18.07.2021</div>
+                </div>
+                <div class="reviews-slider__content content"> 
+                  <p>Всем привет, хочу сказать и свое слово о шаблоне и его авторе: В шаблоне много интересного, и заказы в один клик и таблица размеров (оч удобно если нужно размеры для разных товаров делать) и свайпы чтобы перелистывать картинки- много настроек по цветовой гамме, обычный пользователь может спокойно сам разобраться..( так же настройки другого типа , все вынесено и удобно, если что-то не понимаю, пишу автору - он подсказывает)</p>
+                  <p>На всех устройствах хорошо показывает, конечно есть разные моменты , но автор помогает, и быстро отвечает на вопросы.<br>Рекомендую для покупки! </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="2 of 5">
+              <div class="reviews-slider__item"> 
+                <div class="reviews-slider__top"> 
+                  <div class="reviews-slider__photo img-wrap">
+                    <div><img src="assets/images/svg/avatar.svg" alt=""></div>
+                  </div>
+                  <div class="reviews-slider__name">Dobrik22</div>
+                  <div class="reviews-slider__date">18.07.2021</div>
+                </div>
+                <div class="reviews-slider__content content"> 
+                  <p>Всем привет, хочу сказать и свое слово о шаблоне и его авторе: В шаблоне много интересного, и заказы в один клик и таблица размеров (оч удобно если нужно размеры для разных товаров делать) и свайпы чтобы перелистывать картинки- много настроек по цветовой гамме, обычный пользователь может спокойно сам разобраться..( так же настройки другого типа , все вынесено и удобно, если что-то не понимаю, пишу автору - он подсказывает)</p>
+                  <p>На всех устройствах хорошо показывает, конечно есть разные моменты , но автор помогает, и быстро отвечает на вопросы.<br>Рекомендую для покупки! </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="3 of 5">
+              <div class="reviews-slider__item"> 
+                <div class="reviews-slider__top"> 
+                  <div class="reviews-slider__photo img-wrap">
+                    <div><img src="assets/images/svg/avatar.svg" alt=""></div>
+                  </div>
+                  <div class="reviews-slider__name">Dobrik22</div>
+                  <div class="reviews-slider__date">18.07.2021</div>
+                </div>
+                <div class="reviews-slider__content content"> 
+                  <p>Всем привет, хочу сказать и свое слово о шаблоне и его авторе: В шаблоне много интересного, и заказы в один клик и таблица размеров (оч удобно если нужно размеры для разных товаров делать) и свайпы чтобы перелистывать картинки- много настроек по цветовой гамме, обычный пользователь может спокойно сам разобраться..( так же настройки другого типа , все вынесено и удобно, если что-то не понимаю, пишу автору - он подсказывает)</p>
+                  <p>На всех устройствах хорошо показывает, конечно есть разные моменты , но автор помогает, и быстро отвечает на вопросы.<br>Рекомендую для покупки! </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="4 of 5">
+              <div class="reviews-slider__item"> 
+                <div class="reviews-slider__top"> 
+                  <div class="reviews-slider__photo img-wrap">
+                    <div><img src="assets/images/svg/avatar.svg" alt=""></div>
+                  </div>
+                  <div class="reviews-slider__name">Dobrik22</div>
+                  <div class="reviews-slider__date">18.07.2021</div>
+                </div>
+                <div class="reviews-slider__content content"> 
+                  <p>Всем привет, хочу сказать и свое слово о шаблоне и его авторе: В шаблоне много интересного, и заказы в один клик и таблица размеров (оч удобно если нужно размеры для разных товаров делать) и свайпы чтобы перелистывать картинки- много настроек по цветовой гамме, обычный пользователь может спокойно сам разобраться..( так же настройки другого типа , все вынесено и удобно, если что-то не понимаю, пишу автору - он подсказывает)</p>
+                  <p>На всех устройствах хорошо показывает, конечно есть разные моменты , но автор помогает, и быстро отвечает на вопросы.<br>Рекомендую для покупки! </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="5 of 5">
+              <div class="reviews-slider__item"> 
+                <div class="reviews-slider__top"> 
+                  <div class="reviews-slider__photo img-wrap">
+                    <div><img src="assets/images/svg/avatar.svg" alt=""></div>
+                  </div>
+                  <div class="reviews-slider__name">Dobrik22</div>
+                  <div class="reviews-slider__date">18.07.2021</div>
+                </div>
+                <div class="reviews-slider__content content"> 
+                  <p>Всем привет, хочу сказать и свое слово о шаблоне и его авторе: В шаблоне много интересного, и заказы в один клик и таблица размеров (оч удобно если нужно размеры для разных товаров делать) и свайпы чтобы перелистывать картинки- много настроек по цветовой гамме, обычный пользователь может спокойно сам разобраться..( так же настройки другого типа , все вынесено и удобно, если что-то не понимаю, пишу автору - он подсказывает)</p>
+                  <p>На всех устройствах хорошо показывает, конечно есть разные моменты , но автор помогает, и быстро отвечает на вопросы.<br>Рекомендую для покупки! </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev mobile--hide">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4L8 12L16 20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <div class="swiper-button-next mobile--hide">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 4L16 12L8 20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="swiper-pagination" role="group" aria-label="Choose slides"></div>
+    </div>
+  </div>
+</section>
+<section class="inclusion-resources at-block">
+  <div class="center-wrap"> 
+    <h2 class="inclusion-resources__simple-title simple-title at-element" data-at-name="atTitle">Inclusion Resources</h2>
+    <div class="inclusion-resources__content content at-element" data-at-name="atText">
+      <p>Fearless Futures serves daring organisations — across sectors — ready to actively challenge inequities by.</p>
+    </div>
+  </div>
+  <div class="inclusion-resources__list"> 
+    <button class="inclusion-resources__item" tabindex="0">
+      <div class="inclusion-resources__item-bg"></div>
+      <div class="inclusion-resources__item-bg inclusion-resources__item-bg--hide"></div>
+      <div class="inclusion-resources__img inclusion-resources__img--visible img-wrap img-parallax">
+        <div>
+          <picture><img src="assets/images/png/inclusion-resources__img4.png" alt=""></picture>
+        </div>
+      </div>
+      <div class="inclusion-resources__img inclusion-resources__img--hide img-wrap img-parallax">
+        <div>
+          <picture><img src="assets/images/png/inclusion-resources__img-hide.png" alt=""></picture>
+        </div>
+      </div>
+      <div class="inclusion-resources__info"> 
+        <div class="inclusion-resources__title">How Deep is Your <br> Inclusion Learning?</div><a class="inclusion-resources__link" href="#">
+                    Read
+          <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3216 7.26429C12.5316 7.47428 12.3829 7.83333 12.0859 7.83333L2.50016 7.83333C2.13197 7.83333 1.8335 8.1318 1.8335 8.49999C1.8335 8.86818 2.13197 9.16666 2.50016 9.16666L12.086 9.16666C12.3829 9.16666 12.5316 9.52571 12.3217 9.7357L8.69542 13.3619C8.43507 13.6223 8.43507 14.0444 8.69542 14.3047C8.95577 14.5651 9.37788 14.5651 9.63823 14.3047L14.9716 8.9714C15.2319 8.71105 15.2319 8.28894 14.9716 8.0286L9.63823 2.69526C9.37788 2.43491 8.95577 2.43491 8.69542 2.69526C8.43507 2.95561 8.43507 3.37772 8.69542 3.63807L12.3216 7.26429Z" fill="#781E41"></path>
+          </svg></a>
+      </div>
+    </button>
+    <button class="inclusion-resources__item" tabindex="0">
+      <div class="inclusion-resources__item-bg"></div>
+      <div class="inclusion-resources__item-bg inclusion-resources__item-bg--hide"></div>
+      <div class="inclusion-resources__img img-wrap img-parallax">
+        <div>
+          <picture><img src="assets/images/png/inclusion-resources__img1.png" alt=""></picture>
+        </div>
+      </div>
+      <div class="inclusion-resources__img inclusion-resources__img--hide img-wrap img-parallax">
+        <div>
+          <picture><img src="assets/images/png/inclusion-resources__img-hide.png" alt=""></picture>
+        </div>
+      </div>
+      <div class="inclusion-resources__info"> 
+        <div class="inclusion-resources__title">Islamophobic Sexism: <br> A Discussion Guide</div><a class="inclusion-resources__link" href="">
+           Read
+          <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3216 7.26429C12.5316 7.47428 12.3829 7.83333 12.0859 7.83333L2.50016 7.83333C2.13197 7.83333 1.8335 8.1318 1.8335 8.49999C1.8335 8.86818 2.13197 9.16666 2.50016 9.16666L12.086 9.16666C12.3829 9.16666 12.5316 9.52571 12.3217 9.7357L8.69542 13.3619C8.43507 13.6223 8.43507 14.0444 8.69542 14.3047C8.95577 14.5651 9.37788 14.5651 9.63823 14.3047L14.9716 8.9714C15.2319 8.71105 15.2319 8.28894 14.9716 8.0286L9.63823 2.69526C9.37788 2.43491 8.95577 2.43491 8.69542 2.69526C8.43507 2.95561 8.43507 3.37772 8.69542 3.63807L12.3216 7.26429Z" fill="#781E41"></path>
+          </svg></a>
+      </div>
+    </button>
+    <button class="inclusion-resources__item" tabindex="0">
+      <div class="inclusion-resources__item-bg"></div>
+      <div class="inclusion-resources__item-bg inclusion-resources__item-bg--hide"></div>
+      <div class="inclusion-resources__img img-wrap img-parallax">
+        <div>
+          <picture><img src="assets/images/png/inclusion-resources__img1.png" alt=""></picture>
+        </div>
+      </div>
+      <div class="inclusion-resources__img inclusion-resources__img--hide img-wrap img-parallax">
+        <div>
+          <picture><img src="assets/images/png/inclusion-resources__img-hide.png" alt=""></picture>
+        </div>
+      </div>
+      <div class="inclusion-resources__info"> 
+        <div class="inclusion-resources__title">Introduction to Colonialism</div><a class="inclusion-resources__link" href="">
+           Read
+          <svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3216 7.26429C12.5316 7.47428 12.3829 7.83333 12.0859 7.83333L2.50016 7.83333C2.13197 7.83333 1.8335 8.1318 1.8335 8.49999C1.8335 8.86818 2.13197 9.16666 2.50016 9.16666L12.086 9.16666C12.3829 9.16666 12.5316 9.52571 12.3217 9.7357L8.69542 13.3619C8.43507 13.6223 8.43507 14.0444 8.69542 14.3047C8.95577 14.5651 9.37788 14.5651 9.63823 14.3047L14.9716 8.9714C15.2319 8.71105 15.2319 8.28894 14.9716 8.0286L9.63823 2.69526C9.37788 2.43491 8.95577 2.43491 8.69542 2.69526C8.43507 2.95561 8.43507 3.37772 8.69542 3.63807L12.3216 7.26429Z" fill="#781E41"></path>
+          </svg></a>
+      </div>
+    </button>
+  </div>
+</section>
+<div class="podcast">
+  <div class="center-wrap"> 
+    <div class="podcast__wrap">
+      <div class="podcast__left">
+        <h2 class="podcast__title" id="titlePodc"><span class="podcast__title-row">Fearless</span><span class="podcast__title-box">
+            <div class="podcast__title-row">
+               Futures </div>Podcast         </span></h2>
+        <div class="podcast__btns"> <a class="btn btn--empty" href="#">Listen on
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Play Store">
+              <path d="M8.81774 1.33337H3.69434V6.68626H8.81774V4.44982L17.1233 11.9609L8.81774 19.5503V9.32448H3.69434V22.6667H8.81774L20.3054 11.96L8.81774 1.33337Z"></path>
+            </svg></a><a class="btn btn--empty" href="#">Listen on
+            <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spotify">
+              <path d="M12.5002 1.33337C6.6335 1.33337 1.8335 6.13337 1.8335 12C1.8335 17.8667 6.6335 22.6667 12.5002 22.6667C18.3668 22.6667 23.1668 17.8667 23.1668 12C23.1668 6.13337 18.4202 1.33337 12.5002 1.33337ZM17.4077 16.7467C17.1944 17.0658 16.8211 17.1734 16.5002 16.96C13.9935 15.4134 10.8468 15.0925 7.11261 15.9458C6.74105 16.0543 6.42016 15.7867 6.3135 15.4667C6.20683 15.0925 6.4735 14.7734 6.7935 14.6667C10.8468 13.7592 14.3668 14.1334 17.1402 15.84C17.5135 16 17.5659 16.4258 17.4077 16.7467ZM18.6877 13.8134C18.4202 14.1867 17.9402 14.3467 17.5659 14.08C14.6868 12.32 10.3135 11.7867 6.9535 12.8534C6.52772 12.96 6.04683 12.7467 5.94016 12.32C5.8335 11.8934 6.04683 11.4125 6.4735 11.3058C10.3668 10.1334 15.1668 10.7209 18.4735 12.7467C18.7944 12.9076 18.9535 13.44 18.6877 13.8134ZM18.7944 10.8267C15.3802 8.80004 9.6735 8.58671 6.42016 9.60093C5.88683 9.76004 5.3535 9.44004 5.1935 8.96004C5.0335 8.42582 5.3535 7.89337 5.8335 7.73249C9.62016 6.61249 15.8602 6.82582 19.8077 9.17337C20.2868 9.44004 20.4468 10.08 20.1802 10.56C19.9144 10.9343 19.2735 11.0925 18.7944 10.8267Z"></path>
+            </svg></a><a class="btn btn--empty" href="#">Listen on
+            <svg viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Play Store">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.68 0.201675C19.2858 0.473995 20.5136 0.894476 22.1832 1.74376C24.7746 3.06216 26.9542 4.94664 28.497 7.20264C28.9768 7.9044 29.12 8.26792 29.12 8.78376C29.12 9.34456 29.027 9.54136 28.5486 9.99256C28.0963 10.4191 27.844 10.5314 27.3381 10.5314C26.9866 10.5314 26.5667 10.4607 26.4051 10.3742C26.2435 10.2878 25.8389 9.83768 25.5061 9.37416C25.1731 8.91063 24.447 8.07656 23.8925 7.52056C22.249 5.87272 20.5538 4.85608 18.3493 4.19624C16.5341 3.65288 14.8082 3.46776 13.3186 3.65672C9.86207 4.09495 7.19823 5.39928 4.95183 7.75304C4.37535 8.3572 3.73839 9.12312 3.53647 9.45528C3.10159 10.1703 2.47583 10.5314 1.67199 10.5314C1.22111 10.5314 0.963993 10.4074 0.543993 9.98744C0.0915127 9.53496 -7.62939e-06 9.326 -7.62939e-06 8.74536C-7.62939e-06 8.21656 0.131832 7.85144 0.543192 7.24056C1.13295 6.36472 2.49279 4.8172 3.31695 4.08376C4.56975 2.96888 6.66303 1.72504 8.49535 1.00696C9.25183 0.710475 10.5651 0.356235 11.4136 0.219755C13.1891 -0.0660052 16.0531 -0.074165 17.68 0.201675ZM16.8 6.39223C17.8325 6.56039 19.9602 7.53879 20.9702 8.30999C21.8013 8.9444 22.8275 10.035 23.4203 10.9138C23.651 11.2561 23.8397 11.7601 23.8394 12.0338C23.8384 12.8076 23.3133 13.5247 22.5882 13.7418C21.6248 14.0305 20.928 13.7311 20.1674 12.7015C19.3664 11.6172 18.1274 10.7329 16.7245 10.2442C15.7792 9.91496 15.4008 9.86712 14.2445 9.93032C13.3706 9.97799 12.5456 10.1337 11.9499 10.3634C10.865 10.7817 9.28271 12.0401 8.71903 12.933C8.43759 13.3788 8.14735 13.6103 7.70303 13.7434C6.85343 13.998 6.00127 13.7126 5.58815 13.035C5.02175 12.106 5.24063 11.2886 6.44207 9.84552C7.80975 8.2028 10.3618 6.70024 12.3256 6.38168C13.5394 6.18472 15.5558 6.18952 16.8 6.39223Z"></path>
+              <circle r="5.6" transform="matrix(-1 0 0 1 14.56 18.3998)"></circle>
+              <circle r="2.88" transform="matrix(-1 0 0 1 14.56 18.4005)" fill="#F5F5F5"></circle>
+            </svg></a><a class="podcast__btn btn" href="#" aria-labelledby="titlePodc">Learn More</a></div>
+      </div>
+      <div class="podcast__right mobile--hide">
+        <div class="podcast__right-img img-wrap">
+          <div>
+            <picture><img src="assets/images/png/podcast-img.png" alt=""></picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="clients at-block" role="region" aria-roledescription="carousel" aria-label="Our Clients">
+  <div class="center-wrap"> 
+    <h2 class="clients__simple-title simple-title at-element" data-at-name="atTitle">Our Clients</h2>
+    <div class="clients-slider mobile--hide">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="1 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img1.png" alt="global witness"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="2 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img2.png" alt="Willis Towers Watson"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="3 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img3.png" alt="Warner Records"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="4 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img4.png" alt="united nations network on immigration"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="5 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img5.png" alt="Save the Children"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="6 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img6.png" alt="Blood Cancer"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="7 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img7.png" alt="Switchboard"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="8 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img8.png" alt="M_csaatchi sport and entertainment"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="9 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img9.png" alt="iied"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="10 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img10.png" alt="cleo"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="11 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img11.png" alt="The Marketing Store"></picture>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" aria-hidden="true" role="group" aria-roledescription="slide" aria-label="12 of 12">
+            <div class="clients-slider__img img-wrap">
+              <div>
+                <picture><img src="assets/images/png/clients-img12.png" alt="Expedia_Group_Logo"></picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clients-slider__contr">
+        <div class="swiper-button-prev">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4L8 12L16 20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <div class="swiper-pagination" role="group" aria-label="Choose slides"></div>
+        <div class="swiper-button-next">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 4L16 12L8 20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="clients__list desktop--hide"> 
+      <div class="clients-slider__img img-wrap">
+        <div><img src="assets/images/png/clients-img1.png" alt="global witness"></div>
+      </div>
+      <div class="clients-slider__img img-wrap">
+        <div><img src="assets/images/png/clients-img2.png" alt="Willis Towers Watson"></div>
+      </div>
+      <div class="clients-slider__img img-wrap">
+        <div><img src="assets/images/png/clients-img3.png" alt="Warner Records"></div>
+      </div>
+      <div class="clients-slider__img img-wrap">
+        <div><img src="assets/images/png/clients-img4.png" alt="united nations network on immigration"></div>
+      </div>
+      <div class="clients-slider__img img-wrap">
+        <div><img src="assets/images/png/clients-img5.png" alt="Save the Children"></div>
+      </div>
+      <div class="clients-slider__img img-wrap">
+        <div><img src="assets/images/png/clients-img6.png" alt="Blood Cancer"></div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="contact at-block" id="contact">
+          <div class="center-wrap"> 
+            <div class="contact__wrap"> 
+              <div class="contact__left">
+                <h2 class="contact__simple-title simple-title simple-title--left at-element" data-at-name="atTitle">Contact Us</h2>
+                <div class="contact__content content at-element" data-at-name="atText"> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque ultrices vehicula ultrices sem diam sit nulla. Blandit ac sodales dui.</p>
+                </div>
+                <div class="contact__list at-element" data-at-name="atCustom"> <a class="contact__link" href="mailto:hello@fearlessfutures.org" target="_blank">
+                    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2432 16.5946C10.9787 15.7184 10.2208 15.1914 9.96935 15.014C9.51095 14.7034 9.07822 14.2763 8.6716 13.7328C8.26495 13.1893 8.06152 12.6845 8.06152 12.2186C8.06152 11.6419 8.21495 11.1612 8.52179 10.7767C8.82868 10.3922 9.26684 10.2 9.83621 10.2H26.164C26.6445 10.2 27.0606 10.3737 27.4118 10.7213C27.7631 11.0688 27.9388 11.4866 27.9388 11.9748C27.9388 12.5589 27.7577 13.1172 27.3952 13.6494C27.0329 14.1819 26.5819 14.6368 26.0421 15.0137C23.2618 16.9439 21.5312 18.1456 20.851 18.6187C20.7771 18.6706 20.6198 18.7832 20.3795 18.9571C20.1391 19.131 19.9396 19.2716 19.7806 19.3788C19.6216 19.4859 19.4293 19.606 19.2038 19.7392C18.9784 19.872 18.7656 19.9721 18.566 20.0383C18.3663 20.105 18.1814 20.1381 18.0114 20.1381H18.0002H17.989C17.819 20.1381 17.6341 20.1051 17.4344 20.0383C17.2348 19.9721 17.0221 19.8721 16.7966 19.7392C16.5709 19.6061 16.3787 19.4859 16.2197 19.3788C16.0608 19.2716 15.8611 19.131 15.6207 18.9571C15.3804 18.7834 15.2234 18.6706 15.1494 18.6187C14.4765 18.1456 13.5078 17.4709 12.2432 16.5946ZM21.3057 20.0276C22.5627 19.1179 24.4042 17.8422 26.8295 16.2007C27.2512 15.9124 27.6208 15.5905 27.9389 15.2357V24.0427C27.9389 24.5311 27.7652 24.9486 27.4176 25.2962C27.07 25.6439 26.6521 25.8177 26.1642 25.8177H9.83633C9.34824 25.8177 8.93035 25.6439 8.58283 25.2962C8.23523 24.9487 8.06152 24.5311 8.06152 24.0427V15.2357C8.3869 15.598 8.76034 15.9199 9.18195 16.2007C11.8588 18.0198 13.6964 19.2956 14.6948 20.0276C15.1162 20.338 15.4583 20.5804 15.7207 20.7541C15.9832 20.9279 16.3327 21.1053 16.7689 21.2864C17.2052 21.4678 17.6119 21.5582 17.9891 21.5582H18.0002H18.0115C18.3887 21.5582 18.7953 21.4678 19.2315 21.2864C19.6679 21.1053 20.0171 20.9279 20.2797 20.7541C20.5423 20.5804 20.8842 20.338 21.3057 20.0276Z"></path>
+                    </svg>
+                    <p>hello@fearlessfutures.org</p></a></div>
+              </div>
+              <div class="contact__right">
+                <form class="inputs" action="/action_page.php">
+                  <fieldset> 
+                    <legend class="contact__right-title">Complete the form <br> to get in touch with us!</legend>
+                    <div class="inputs__field-wrap">
+                      <input class="inputs__field" type="text" id="text" aria-required="true" name="text" aria-describedby="text-error" autocomplete="name" required="" minlength="2">
+                      <label class="inputs__content" for="text">Your name</label>
+                      <label class="inputs__field-error" id="text-error" for="">The text field is mandatory.</label>
+                    </div>
+                    <div class="inputs__field-wrap">
+                      <input class="inputs__field" type="text" id="textCompany" aria-describedby="company-error" name="text" aria-required="true" autocomplete="organization" required="" minlength="2">
+                      <label class="inputs__content" for="textCompany">Company name</label>
+                      <label class="inputs__field-error" id="company-error">The company name field is mandatory.</label>
+                    </div>
+                    <div class="inputs__field-wrap">
+                      <input class="inputs__field" type="email" id="email" name="email" aria-describedby="mail-error" aria-required="true" autocomplete="email" required="">
+                      <label class="inputs__content" for="email">E-mail</label>
+                      <label class="inputs__field-error" id="mail-error">The email field is mandatory.</label>
+                    </div>
+                    <div class="inputs__field-wrap inputs__field-wrap--textarea">
+                      <textarea class="inputs__field" name="textarea" id="textarea" aria-required="true" required></textarea>
+                      <label class="inputs__content" for="textarea">Message</label>
+                    </div>
+                    <div class="inputs__checkbox">
+                      <label class="inputs__checkbox-label">
+                        <input class="inputs__checkbox-input" type="checkbox" checked="checked"><span class="inputs__checkbox-content" role="checkbox" aria-labelledby="worldpeace"></span><span class="inputs__checkbox-labelledby" id="worldpeace">checkbox</span><span class="inputs__checkbox-text">I agree to company </span><a class="inputs__checkbox-link" href="">terms and conditions.</a>
+                      </label>
+                    </div>
+                    <div class="inputs__btn">
+                      <button class="btn" type="submit">Receive a consultation</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__bg"></div>
+    <div class="center-wrap">
+      <div class="footer__top-row"> 
+        <nav class="footer__nav" aria-label="Footer">
+          <ul class="footer__nav-list" role="list">
+            <li class="footer__nav-item" role="listitem"> <a class="footer__nav-link" href="">Careers</a></li>
+            <li class="footer__nav-item" role="listitem"> <a class="footer__nav-link" href="">Media</a></li>
+            <li class="footer__nav-item" role="listitem"> <a class="footer__nav-link" href="">F.A.Q.</a></li>
+            <li class="footer__nav-item" role="listitem"> <a class="footer__nav-link" href="">Newsletter Archive</a></li>
+          </ul>
+        </nav>
+        <div class="footer__top-box"><a class="footer__top-email" href="mailto:hello@fearlessfutures.org" target="_blank">hello@fearlessfutures.org</a>
+          <div class="footer__socials"> 
+            <ul class="socials" role="list">
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instagram">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59961 9.99998C4.59961 7.75014 4.59961 6.62522 5.17256 5.83662C5.3576 5.58194 5.58157 5.35796 5.83625 5.17292C6.62485 4.59998 7.74977 4.59998 9.99961 4.59998H13.9996C16.2494 4.59998 17.3744 4.59998 18.163 5.17292C18.4176 5.35796 18.6416 5.58194 18.8267 5.83662C19.3996 6.62522 19.3996 7.75014 19.3996 9.99997V14C19.3996 16.2498 19.3996 17.3747 18.8267 18.1633C18.6416 18.418 18.4176 18.642 18.163 18.827C17.3744 19.4 16.2494 19.4 13.9996 19.4H9.99961C7.74977 19.4 6.62485 19.4 5.83625 18.827C5.58157 18.642 5.3576 18.418 5.17256 18.1633C4.59961 17.3747 4.59961 16.2498 4.59961 14V9.99998ZM11.9995 8.08233C9.83601 8.08233 8.08188 9.83646 8.08188 12C8.08188 14.1635 9.83601 15.9176 11.9995 15.9176C14.163 15.9176 15.9172 14.1635 15.9172 12C15.9172 9.83646 14.163 8.08233 11.9995 8.08233ZM11.9995 14.4485C10.6499 14.4485 9.551 13.3496 9.551 12C9.551 10.6494 10.6499 9.55145 11.9995 9.55145C13.3492 9.55145 14.4481 10.6494 14.4481 12C14.4481 13.3496 13.3492 14.4485 11.9995 14.4485ZM16.7331 7.78851C16.7331 8.07682 16.4994 8.31054 16.2111 8.31054C15.9228 8.31054 15.6891 8.07682 15.6891 7.78851C15.6891 7.5002 15.9228 7.26648 16.2111 7.26648C16.4994 7.26648 16.7331 7.5002 16.7331 7.78851Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Facebook">
+                    <path d="M12.9819 20.3999C13.2028 20.3999 13.3819 20.2208 13.3819 19.9999V13.1366C13.3819 12.9157 13.561 12.7366 13.7819 12.7366H15.5651C15.7665 12.7366 15.9365 12.5868 15.9619 12.387L16.2398 10.2005C16.2702 9.96152 16.0839 9.75009 15.843 9.75009H13.7819C13.561 9.75009 13.3819 9.57101 13.3819 9.35009V7.8433C13.3819 6.97865 13.6186 6.38935 14.8409 6.38935L16 6.38881C16.2208 6.3887 16.3998 6.20965 16.3998 5.98881V4.06735C16.3998 3.86703 16.2518 3.6987 16.0523 3.68118C15.6242 3.64359 14.9168 3.59998 14.1282 3.59998C11.8807 3.59998 10.3419 4.9917 10.3419 7.54767V9.35017C10.3419 9.57109 10.1628 9.75018 9.94191 9.75018H8.1998C7.97889 9.75018 7.7998 9.92926 7.7998 10.1502V12.3367C7.7998 12.5576 7.97889 12.7367 8.1998 12.7367H9.94183C10.1627 12.7367 10.3418 12.9158 10.3418 13.1367V20C10.3418 20.2209 10.5209 20.4 10.7418 20.4L12.9819 20.3999Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Twitter">
+                    <path d="M22 5.89789C21.2645 6.21861 20.4744 6.43531 19.6438 6.53326C20.5008 6.0286 21.142 5.23432 21.4477 4.29863C20.6425 4.7693 19.7612 5.1006 18.8422 5.27812C18.2242 4.62877 17.4057 4.19836 16.5136 4.05374C15.6216 3.90911 14.706 4.05834 13.909 4.47828C13.1119 4.89821 12.4781 5.56535 12.1058 6.37611C11.7336 7.18688 11.6437 8.0959 11.8503 8.96206C10.2187 8.88144 8.62259 8.46412 7.16553 7.73718C5.70847 7.01023 4.42301 5.98991 3.39258 4.74244C3.04025 5.34053 2.83766 6.03398 2.83766 6.7725C2.83727 7.43734 3.00364 8.09199 3.32201 8.67838C3.64038 9.26477 4.10091 9.76476 4.66273 10.134C4.01117 10.1136 3.37397 9.94032 2.80419 9.62863V9.68064C2.80413 10.6131 3.13189 11.5169 3.73186 12.2386C4.33184 12.9603 5.16707 13.4555 6.09583 13.6402C5.4914 13.8012 4.85769 13.8249 4.24258 13.7096C4.50462 14.5119 5.01506 15.2135 5.70243 15.7162C6.3898 16.2188 7.21969 16.4974 8.07593 16.5128C6.62242 17.6357 4.82735 18.2448 2.97948 18.2421C2.65215 18.2422 2.32509 18.2234 2 18.1858C3.87569 19.3726 6.05914 20.0024 8.28909 20C15.8378 20 19.9644 13.8474 19.9644 8.51132C19.9644 8.33796 19.96 8.16286 19.9521 7.9895C20.7548 7.41825 21.4476 6.71087 21.9982 5.90049L22 5.89789Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YouTube">
+                    <path d="M21.5781 7.18571C21.4643 6.76289 21.2414 6.37737 20.9318 6.06774C20.6222 5.75811 20.2367 5.53524 19.8139 5.42143C18.2568 5 12 5 12 5C12 5 5.74319 5 4.18613 5.42143C3.76333 5.53524 3.37783 5.75811 3.06822 6.06774C2.75861 6.37737 2.53575 6.76289 2.42194 7.18571C2.13121 8.77376 1.99012 10.3856 2.00054 12C1.99012 13.6144 2.13121 15.2262 2.42194 16.8143C2.53575 17.2371 2.75861 17.6226 3.06822 17.9323C3.37783 18.2419 3.76333 18.4648 4.18613 18.5786C5.74319 19 12 19 12 19C12 19 18.2568 19 19.8139 18.5786C20.2367 18.4648 20.6222 18.2419 20.9318 17.9323C21.2414 17.6226 21.4643 17.2371 21.5781 16.8143C21.8688 15.2262 22.0099 13.6144 21.9995 12C22.0099 10.3856 21.8688 8.77376 21.5781 7.18571ZM10.0001 15V9L15.1927 12L10.0001 15Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LinkedIn">
+                    <path d="M18.3878 18.3367C17.5776 18.3175 16.7867 18.3175 15.9766 18.3367C15.803 18.3367 15.7644 18.2982 15.7644 18.1246C15.7644 16.6971 15.7644 15.2504 15.7644 13.823C15.7644 13.4951 15.7451 13.1672 15.6487 12.8585C15.3593 11.8555 14.202 11.489 13.3725 12.1641C12.9288 12.5113 12.7552 12.9935 12.7552 13.5722C12.7552 14.9225 12.7552 16.2728 12.7552 17.623C12.7552 17.7966 12.7359 17.9702 12.7552 18.1631C12.7728 18.3034 12.7106 18.3481 12.5977 18.3405C12.5741 18.3389 12.5505 18.3367 12.5268 18.3367C11.7097 18.3367 10.9109 18.3367 10.0933 18.3367C9.93897 18.3367 9.90039 18.2982 9.90039 18.1438C9.91968 16.9286 9.91968 15.7134 9.91968 14.4788C9.91968 12.9743 9.91968 11.4697 9.90039 9.98439C9.90039 9.81078 9.93897 9.7722 10.0933 9.7722C10.9227 9.7722 11.7329 9.7722 12.5623 9.7722C12.7167 9.7722 12.7552 9.81078 12.7552 9.9651C12.7552 10.2362 12.7552 10.5072 12.7552 10.8175C12.7552 10.866 12.8153 10.8888 12.8495 10.8546V10.8546C12.8519 10.8522 12.8527 10.851 12.8546 10.8482C13.6067 9.75212 14.6665 9.44453 15.9187 9.63717C17.3654 9.86865 18.2913 10.8717 18.5228 12.4149C18.5807 12.7814 18.6 13.1479 18.6 13.5144C18.6 15.0575 18.6 16.5814 18.6 18.1246C18.6 18.2789 18.5614 18.3367 18.3878 18.3367Z"></path>
+                    <path d="M8.35704 14.0544C8.35704 15.4047 8.35704 16.755 8.35704 18.1052C8.35704 18.2788 8.31846 18.3367 8.14486 18.3367C7.3347 18.3174 6.52454 18.3367 5.71438 18.3367C5.56006 18.3367 5.52148 18.2981 5.52148 18.1438C5.52148 15.424 5.52148 12.6849 5.52148 9.96505C5.52148 9.83002 5.56006 9.77216 5.71438 9.77216C6.54383 9.77216 7.37328 9.77216 8.20273 9.77216C8.37633 9.77216 8.39562 9.83002 8.39562 9.98434C8.35704 11.3346 8.35704 12.6849 8.35704 14.0544Z"></path>
+                    <path d="M8.49227 7.53457C8.29938 8.30615 7.50851 8.74981 6.6019 8.59549C5.63742 8.44117 5.09732 7.49599 5.44453 6.57009C5.676 5.99141 6.2354 5.64419 6.94911 5.66348C8.02932 5.64419 8.74304 6.51222 8.49227 7.53457Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__comp img-wrap desktop--hide">
+          <div>
+            <picture><img src="assets/images/png/footer-comp.png" alt="Logo CFA ISO 27001"></picture>
+          </div>
+        </div>
+      </div>
+      <div class="footer__top-row">
+        <div class="footer__top-left"><a class="footer__logo single-anchors img-wrap" href="index.html#home">
+            <div><img src="assets/images/svg/logo2.svg" alt="Fearless Future Home"></div></a>
+          <p>Fearless Futures Limited</p>
+          <div class="footer__top-info">Company Number: 9214581 VAT Registration: 258 4472 76</div>
+        </div>
+        <div class="footer__sing">
+          <div class="footer__sing-title">Sign Up</div>
+          <div class="footer__sing-info">For Fearless Futures’ Newsletter</div>
+        </div><a class="footer__btn btn btn--empty" href="mailto:example@gmail.com" target="_blank">example@gmail.com</a>
+        <div class="footer__comp img-wrap mobile--hide">
+          <div>
+            <picture><img src="assets/images/png/footer-comp.png" alt="Logo CFA ISO 27001"></picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom mobile--hide">
+    <div class="center-wrap">
+      <p class="footer__bottom-copyr">© Copyright 2021 | All right reserved Fearless Futures</p>
+    </div>
+  </div>
+</footer>
+    </div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <button class="mobile-menu__act mobile-menu__act--close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 7.05L16.95 6L12 10.95L7.05 6L6 7.05L10.95 12L6 16.95L7.05 18L12 13.05L16.95 18L18 16.95L13.05 12L18 7.05Z"></path>
+      </svg>
+    </button>
+    <div class="mobile-menu__body">
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__nav-list" role="list">
+          <li class="mobile-menu__nav-item" role="listitem"><a class="mobile-menu__nav-link" href="" role="button">About us</a></li>
+          <li class="mobile-menu__nav-item mobile-menu__nav-item--drop" role="listitem" aria-haspopup="true" aria-expanded="false" tabindex="0">
+            <p>Services</p>
+            <ul class="mobile-menu__drop mobile-menu__drop--js" role="list">
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Training</a></li>
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Consultancy</a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__nav-item" role="listitem"><a class="mobile-menu__nav-link" href="" role="button">Team</a></li>
+          <li class="mobile-menu__nav-item" role="listitem"><a class="mobile-menu__nav-link" href="" role="button">Impact</a></li>
+          <li class="mobile-menu__nav-item mobile-menu__nav-item--drop" role="listitem" aria-haspopup="true" aria-expanded="false" tabindex="0">
+            <p>Resources</p>
+            <ul class="mobile-menu__drop mobile-menu__drop--js" role="list">
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Learning Materials</a></li>
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Podcast</a></li>
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Blog</a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__nav-item" role="listitem"><a class="mobile-menu__nav-link" href="" role="button">FAQs</a></li>
+        </ul>
+      </nav><a class="btn mobile-menu__btn single-anchors" href="home.html#contact">Contact us</a>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="thank-you">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('thank-you')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Спасибо!</div>
+      <div class="popup__content content"> 
+        <p>Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1668790235662"></script></body>
+</html>

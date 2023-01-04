@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>Permanent Roles</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link href="assets/css/app.css?v=1668790239311" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo"><img src="assets/images/svg/logo-advantage.svg" alt="Images"></div>
+  <div class="preloader-line">
+    <div class="preloader-loading"></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  
+  if (!(document.referrer.indexOf('fearless') == -1) || !(location.href.indexOf('localhost') == -1)) {
+      preloader.remove();
+  }
+  
+  
+  setTimeout(function () {
+      if (preloader) {
+          setTimeout(function () {
+              preloader.classList.add('preloader--hide');
+          }, 2000);
+  
+          setTimeout(function () {
+              preloader.style.display = 'none';
+          }, 3500);
+      }
+  }, 500);
+</script>
+<header class="header" aria-label="Main">
+  <div class="center-wrap">
+    <div class="header__wrap"><a class="main-content" href="#main">Skip to main content</a><a class="header__logo single-anchors img-wrap" href="home.html#home">
+        <div><img src="assets/images/svg/logo.svg" alt="Fearless Future Home"></div></a>
+      <nav class="header__nav mobile--hide">
+        <ul class="header__nav-list" role="menu">
+          <li class="header__nav-item" role="menuitem"><a class="header__nav-link" href="/">About us</a></li>
+          <li class="header__nav-item header__nav-item--drop" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="0"><span class="header__nav-link">Services</span>
+            <ul class="header__drop header__drop--js">
+              <li class="header__drop-item"><a class="header__nav-link" href="">Training</a></li>
+              <li class="header__drop-item"><a class="header__nav-link" href="">Consultancy</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item" role="menuitem"><a class="header__nav-link" href="/team.html">Team</a></li>
+          <li class="header__nav-item" role="menuitem"><a class="header__nav-link" href="/team.html">Impact</a></li>
+          <li class="header__nav-item header__nav-item--drop" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="0"><span class="header__nav-link">Resources</span>
+            <ul class="header__drop header__drop--width header__drop--js">
+              <li class="header__drop-item"><a class="header__nav-link" href="">Learning Materials</a></li>
+              <li class="header__drop-item"><a class="header__nav-link" href="">Podcast</a></li>
+              <li class="header__drop-item"><a class="header__nav-link" href="">Blog</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item" role="menuitem"><a class="header__nav-link" href="/faq.html">F.A.Q.</a></li>
+        </ul>
+      </nav>
+      <div class="header__search">
+        <form class="search" action="/action_page.php">
+          <input class="search__inputs" type="text" aria-label="Search" role="search" tabindex="0">
+          <button class="search__btn" type="submit">
+            <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L12.9056 14.3199Z"></path>
+            </svg>
+          </button>
+        </form>
+      </div><a class="header__btn btn single-anchors mobile--hide" href="home.html#contact">Contact us</a>
+      <button class="header__burger desktop--hide" aria-label="Main Menu" aria-expanded="false">
+        <div></div>
+        <div></div>
+      </button>
+    </div>
+  </div>
+</header>
+    <div id="scrollbar">
+      <main id="main">
+        <section class="main-screen img-parallax at-block main-screen--line2">
+          <picture>
+            <source srcset="assets/images/png/main-screen-imgRoles--mobile.png" media="(max-width: 480px)"><img class="main-screen__bg" src="assets/images/png/main-screen-imgRoles.png" alt="">
+          </picture>
+          <div class="center-wrap">
+            <h1 class="at-element main-screen__simple-title main-screen__simple-title--width" data-at-name="atTitle">Permanent Roles</h1>
+          </div>
+        </section>
+<section class="permanent-roles">
+  <div class="center-wrap">
+    <div class="permanent-roles__top">
+      <div class="permanent-roles__content content"> 
+        <h2>Here are some of the benefits permanent roles receive at Fearless Futures</h2>
+        <ul class="grid" role="list">
+          <li role="listitem">10% pension contribution</li>
+          <li role="listitem">6 months full pay (or pro rata for PT staff) parental leave for staff of all genders and whether parenting comes by birth, surrogacy, fostering or adoption</li>
+          <li role="listitem">Fantastic colleagues in the USA and the UK</li>
+          <li role="listitem">Personal leave allowance: 25 days total plus 8 public/federal holidays.</li>
+          <li role="listitem">The FF offices close at year end, giving all staff an additional c4-5 days of leave</li>
+          <li role="listitem">Remote working with access to co-working spaces </li>
+          <li role="listitem">$360/£300 annual wellness supplement</li>
+          <li role="listitem">Flexible working</li>
+          <li role="listitem">Annual ‘away week’</li>
+          <li role="listitem">Team lunches</li>
+          <li role="listitem">Celebratory life event gifts</li>
+          <li role="listitem">A $1300/£1000 professional development annual budget</li>
+          <li role="listitem">Mobile phone contribution</li>
+          <li role="listitem">Fast progression</li>
+          <li role="listitem">Well-being hotline via our HR provider</li>
+          <li role="listitem">Opportunity to participate in FF’s training</li>
+          <li role="listitem">Discretionary bonus</li>
+          <li role="listitem">Opportunities for global travel</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="permanent-roles__wrap">
+    <div class="center-wrap">
+      <ul class="permanent-roles__list" role="list"> 
+        <li class="permanent-roles__item content" role="listitem">
+          <div class="permanent-roles__item-top"> 
+            <h3 id="permanent-rolesTitle1">Learning Design Senior Manager</h3>
+            <h4>Full Time, Permanent </h4>
+          </div>
+          <p>Fearless Futures (FF) serves daring organisations - across sectors - ready to actively challenge inequities by addressing their roots, intersections, and lived realities.</p>
+          <div class="permanent-roles__item-bottom"> 
+            <div class="permanent-roles__item-box"> 
+              <h4>Deadline to apply:</h4>
+              <p>31 January, midnight EST</p>
+            </div>
+            <div class="permanent-roles__item-box"> 
+              <h4>Start date:</h4>
+              <p>March-May 2022</p>
+            </div>
+            <div class="permanent-roles__item-box"> 
+              <h4>Salary:</h4>
+              <p>£45,000 - £55,000 p. a. if UK-based</p>
+              <p>$65,000 - $75,000 p. a. if US based </p>
+            </div>
+            <div class="permanent-roles__btn"> <a class="btn btn--empty" href="" aria-labelledby="permanent-rolesTitle1">Learn more</a></div>
+          </div>
+        </li>
+        <li class="permanent-roles__item content" role="listitem">
+          <div class="permanent-roles__item-top"> 
+            <h3 id="permanent-rolesTitle1">Learning Design Senior Manager</h3>
+            <h4>Full Time, Permanent </h4>
+          </div>
+          <p>Fearless Futures (FF) serves daring organisations - across sectors - ready to actively challenge inequities by addressing their roots, intersections, and lived realities.</p>
+          <div class="permanent-roles__item-bottom"> 
+            <div class="permanent-roles__item-box"> 
+              <h4>Deadline to apply:</h4>
+              <p>31 January, midnight EST</p>
+            </div>
+            <div class="permanent-roles__item-box"> 
+              <h4>Start date:</h4>
+              <p>March-May 2022</p>
+            </div>
+            <div class="permanent-roles__item-box"> 
+              <h4>Salary:</h4>
+              <p>£45,000 - £55,000 p. a. if UK-based</p>
+              <p>$65,000 - $75,000 p. a. if US based </p>
+            </div>
+            <div class="permanent-roles__btn"> <a class="btn btn--empty" href="" aria-labelledby="permanent-rolesTitle1">Learn more</a></div>
+          </div>
+        </li>
+        <li class="permanent-roles__item content" role="listitem">
+          <div class="permanent-roles__item-top"> 
+            <h3 id="permanent-rolesTitle1">Learning Design Senior Manager</h3>
+            <h4>Full Time, Permanent </h4>
+          </div>
+          <p>Fearless Futures (FF) serves daring organisations - across sectors - ready to actively challenge inequities by addressing their roots, intersections, and lived realities.</p>
+          <div class="permanent-roles__item-bottom"> 
+            <div class="permanent-roles__item-box"> 
+              <h4>Deadline to apply:</h4>
+              <p>31 January, midnight EST</p>
+            </div>
+            <div class="permanent-roles__item-box"> 
+              <h4>Start date:</h4>
+              <p>March-May 2022</p>
+            </div>
+            <div class="permanent-roles__item-box"> 
+              <h4>Salary:</h4>
+              <p>£45,000 - £55,000 p. a. if UK-based</p>
+              <p>$65,000 - $75,000 p. a. if US based </p>
+            </div>
+            <div class="permanent-roles__btn"> <a class="btn btn--empty" href="" aria-labelledby="permanent-rolesTitle1">Learn more</a></div>
+          </div>
+        </li>
+        <li class="permanent-roles__item content" role="listitem">
+          <div class="permanent-roles__item-top"> 
+            <h3 id="permanent-rolesTitle1">Learning Design Senior Manager</h3>
+            <h4>Full Time, Permanent </h4>
+          </div>
+          <p>Fearless Futures (FF) serves daring organisations - across sectors - ready to actively challenge inequities by addressing their roots, intersections, and lived realities.</p>
+          <div class="permanent-roles__item-bottom"> 
+            <div class="permanent-roles__item-box"> 
+              <h4>Deadline to apply:</h4>
+              <p>31 January, midnight EST</p>
+            </div>
+            <div class="permanent-roles__item-box"> 
+              <h4>Start date:</h4>
+              <p>March-May 2022</p>
+            </div>
+            <div class="permanent-roles__item-box"> 
+              <h4>Salary:</h4>
+              <p>£45,000 - £55,000 p. a. if UK-based</p>
+              <p>$65,000 - $75,000 p. a. if US based </p>
+            </div>
+            <div class="permanent-roles__btn"> <a class="btn btn--empty" href="" aria-labelledby="permanent-rolesTitle1">Learn more</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+        <div class="quotes at-block">
+          <div class="quotes__wrap quotes__wrap--white">
+            <div class="quotes__left">
+              <div class="quotes__left-wrap">
+                <div class="quotes__left-box">
+                  <div class="quotes__left-content content"> 
+                    <blockquote class="at-element" data-at-name="atText">The power of a free mind consists of trusting your own mind to ask the questions that need to be asked and your own capacity to figure out the strategies you need to get those questions answered.</blockquote>
+                  </div>
+                  <div class="quotes__left-author at-element" data-at-name="atCustom">Patricia Hill Collins</div>
+                </div>
+              </div>
+            </div>
+            <div class="quotes__right img-parallax img-wrap">
+              <div><img src="assets/images/png/quotes-imgPress.png" alt="Patricia Hill Collins"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__bg"></div>
+    <div class="center-wrap">
+      <div class="footer__top-row"> 
+        <nav class="footer__nav" aria-label="Footer">
+          <ul class="footer__nav-list" role="list">
+            <li class="footer__nav-item" role="listitem"> <a class="footer__nav-link" href="">Careers</a></li>
+            <li class="footer__nav-item" role="listitem"> <a class="footer__nav-link" href="">Media</a></li>
+            <li class="footer__nav-item" role="listitem"> <a class="footer__nav-link" href="">F.A.Q.</a></li>
+            <li class="footer__nav-item" role="listitem"> <a class="footer__nav-link" href="">Newsletter Archive</a></li>
+          </ul>
+        </nav>
+        <div class="footer__top-box"><a class="footer__top-email" href="mailto:hello@fearlessfutures.org" target="_blank">hello@fearlessfutures.org</a>
+          <div class="footer__socials"> 
+            <ul class="socials" role="list">
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instagram">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59961 9.99998C4.59961 7.75014 4.59961 6.62522 5.17256 5.83662C5.3576 5.58194 5.58157 5.35796 5.83625 5.17292C6.62485 4.59998 7.74977 4.59998 9.99961 4.59998H13.9996C16.2494 4.59998 17.3744 4.59998 18.163 5.17292C18.4176 5.35796 18.6416 5.58194 18.8267 5.83662C19.3996 6.62522 19.3996 7.75014 19.3996 9.99997V14C19.3996 16.2498 19.3996 17.3747 18.8267 18.1633C18.6416 18.418 18.4176 18.642 18.163 18.827C17.3744 19.4 16.2494 19.4 13.9996 19.4H9.99961C7.74977 19.4 6.62485 19.4 5.83625 18.827C5.58157 18.642 5.3576 18.418 5.17256 18.1633C4.59961 17.3747 4.59961 16.2498 4.59961 14V9.99998ZM11.9995 8.08233C9.83601 8.08233 8.08188 9.83646 8.08188 12C8.08188 14.1635 9.83601 15.9176 11.9995 15.9176C14.163 15.9176 15.9172 14.1635 15.9172 12C15.9172 9.83646 14.163 8.08233 11.9995 8.08233ZM11.9995 14.4485C10.6499 14.4485 9.551 13.3496 9.551 12C9.551 10.6494 10.6499 9.55145 11.9995 9.55145C13.3492 9.55145 14.4481 10.6494 14.4481 12C14.4481 13.3496 13.3492 14.4485 11.9995 14.4485ZM16.7331 7.78851C16.7331 8.07682 16.4994 8.31054 16.2111 8.31054C15.9228 8.31054 15.6891 8.07682 15.6891 7.78851C15.6891 7.5002 15.9228 7.26648 16.2111 7.26648C16.4994 7.26648 16.7331 7.5002 16.7331 7.78851Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Facebook">
+                    <path d="M12.9819 20.3999C13.2028 20.3999 13.3819 20.2208 13.3819 19.9999V13.1366C13.3819 12.9157 13.561 12.7366 13.7819 12.7366H15.5651C15.7665 12.7366 15.9365 12.5868 15.9619 12.387L16.2398 10.2005C16.2702 9.96152 16.0839 9.75009 15.843 9.75009H13.7819C13.561 9.75009 13.3819 9.57101 13.3819 9.35009V7.8433C13.3819 6.97865 13.6186 6.38935 14.8409 6.38935L16 6.38881C16.2208 6.3887 16.3998 6.20965 16.3998 5.98881V4.06735C16.3998 3.86703 16.2518 3.6987 16.0523 3.68118C15.6242 3.64359 14.9168 3.59998 14.1282 3.59998C11.8807 3.59998 10.3419 4.9917 10.3419 7.54767V9.35017C10.3419 9.57109 10.1628 9.75018 9.94191 9.75018H8.1998C7.97889 9.75018 7.7998 9.92926 7.7998 10.1502V12.3367C7.7998 12.5576 7.97889 12.7367 8.1998 12.7367H9.94183C10.1627 12.7367 10.3418 12.9158 10.3418 13.1367V20C10.3418 20.2209 10.5209 20.4 10.7418 20.4L12.9819 20.3999Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Twitter">
+                    <path d="M22 5.89789C21.2645 6.21861 20.4744 6.43531 19.6438 6.53326C20.5008 6.0286 21.142 5.23432 21.4477 4.29863C20.6425 4.7693 19.7612 5.1006 18.8422 5.27812C18.2242 4.62877 17.4057 4.19836 16.5136 4.05374C15.6216 3.90911 14.706 4.05834 13.909 4.47828C13.1119 4.89821 12.4781 5.56535 12.1058 6.37611C11.7336 7.18688 11.6437 8.0959 11.8503 8.96206C10.2187 8.88144 8.62259 8.46412 7.16553 7.73718C5.70847 7.01023 4.42301 5.98991 3.39258 4.74244C3.04025 5.34053 2.83766 6.03398 2.83766 6.7725C2.83727 7.43734 3.00364 8.09199 3.32201 8.67838C3.64038 9.26477 4.10091 9.76476 4.66273 10.134C4.01117 10.1136 3.37397 9.94032 2.80419 9.62863V9.68064C2.80413 10.6131 3.13189 11.5169 3.73186 12.2386C4.33184 12.9603 5.16707 13.4555 6.09583 13.6402C5.4914 13.8012 4.85769 13.8249 4.24258 13.7096C4.50462 14.5119 5.01506 15.2135 5.70243 15.7162C6.3898 16.2188 7.21969 16.4974 8.07593 16.5128C6.62242 17.6357 4.82735 18.2448 2.97948 18.2421C2.65215 18.2422 2.32509 18.2234 2 18.1858C3.87569 19.3726 6.05914 20.0024 8.28909 20C15.8378 20 19.9644 13.8474 19.9644 8.51132C19.9644 8.33796 19.96 8.16286 19.9521 7.9895C20.7548 7.41825 21.4476 6.71087 21.9982 5.90049L22 5.89789Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YouTube">
+                    <path d="M21.5781 7.18571C21.4643 6.76289 21.2414 6.37737 20.9318 6.06774C20.6222 5.75811 20.2367 5.53524 19.8139 5.42143C18.2568 5 12 5 12 5C12 5 5.74319 5 4.18613 5.42143C3.76333 5.53524 3.37783 5.75811 3.06822 6.06774C2.75861 6.37737 2.53575 6.76289 2.42194 7.18571C2.13121 8.77376 1.99012 10.3856 2.00054 12C1.99012 13.6144 2.13121 15.2262 2.42194 16.8143C2.53575 17.2371 2.75861 17.6226 3.06822 17.9323C3.37783 18.2419 3.76333 18.4648 4.18613 18.5786C5.74319 19 12 19 12 19C12 19 18.2568 19 19.8139 18.5786C20.2367 18.4648 20.6222 18.2419 20.9318 17.9323C21.2414 17.6226 21.4643 17.2371 21.5781 16.8143C21.8688 15.2262 22.0099 13.6144 21.9995 12C22.0099 10.3856 21.8688 8.77376 21.5781 7.18571ZM10.0001 15V9L15.1927 12L10.0001 15Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+              <li class="socials__item" role="listitem"><a class="socials__link" href="#" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LinkedIn">
+                    <path d="M18.3878 18.3367C17.5776 18.3175 16.7867 18.3175 15.9766 18.3367C15.803 18.3367 15.7644 18.2982 15.7644 18.1246C15.7644 16.6971 15.7644 15.2504 15.7644 13.823C15.7644 13.4951 15.7451 13.1672 15.6487 12.8585C15.3593 11.8555 14.202 11.489 13.3725 12.1641C12.9288 12.5113 12.7552 12.9935 12.7552 13.5722C12.7552 14.9225 12.7552 16.2728 12.7552 17.623C12.7552 17.7966 12.7359 17.9702 12.7552 18.1631C12.7728 18.3034 12.7106 18.3481 12.5977 18.3405C12.5741 18.3389 12.5505 18.3367 12.5268 18.3367C11.7097 18.3367 10.9109 18.3367 10.0933 18.3367C9.93897 18.3367 9.90039 18.2982 9.90039 18.1438C9.91968 16.9286 9.91968 15.7134 9.91968 14.4788C9.91968 12.9743 9.91968 11.4697 9.90039 9.98439C9.90039 9.81078 9.93897 9.7722 10.0933 9.7722C10.9227 9.7722 11.7329 9.7722 12.5623 9.7722C12.7167 9.7722 12.7552 9.81078 12.7552 9.9651C12.7552 10.2362 12.7552 10.5072 12.7552 10.8175C12.7552 10.866 12.8153 10.8888 12.8495 10.8546V10.8546C12.8519 10.8522 12.8527 10.851 12.8546 10.8482C13.6067 9.75212 14.6665 9.44453 15.9187 9.63717C17.3654 9.86865 18.2913 10.8717 18.5228 12.4149C18.5807 12.7814 18.6 13.1479 18.6 13.5144C18.6 15.0575 18.6 16.5814 18.6 18.1246C18.6 18.2789 18.5614 18.3367 18.3878 18.3367Z"></path>
+                    <path d="M8.35704 14.0544C8.35704 15.4047 8.35704 16.755 8.35704 18.1052C8.35704 18.2788 8.31846 18.3367 8.14486 18.3367C7.3347 18.3174 6.52454 18.3367 5.71438 18.3367C5.56006 18.3367 5.52148 18.2981 5.52148 18.1438C5.52148 15.424 5.52148 12.6849 5.52148 9.96505C5.52148 9.83002 5.56006 9.77216 5.71438 9.77216C6.54383 9.77216 7.37328 9.77216 8.20273 9.77216C8.37633 9.77216 8.39562 9.83002 8.39562 9.98434C8.35704 11.3346 8.35704 12.6849 8.35704 14.0544Z"></path>
+                    <path d="M8.49227 7.53457C8.29938 8.30615 7.50851 8.74981 6.6019 8.59549C5.63742 8.44117 5.09732 7.49599 5.44453 6.57009C5.676 5.99141 6.2354 5.64419 6.94911 5.66348C8.02932 5.64419 8.74304 6.51222 8.49227 7.53457Z"></path>
+                  </svg><span class="socials__item-text">Opening in a new window</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__comp img-wrap desktop--hide">
+          <div>
+            <picture><img src="assets/images/png/footer-comp.png" alt="Logo CFA ISO 27001"></picture>
+          </div>
+        </div>
+      </div>
+      <div class="footer__top-row">
+        <div class="footer__top-left"><a class="footer__logo single-anchors img-wrap" href="index.html#home">
+            <div><img src="assets/images/svg/logo2.svg" alt="Fearless Future Home"></div></a>
+          <p>Fearless Futures Limited</p>
+          <div class="footer__top-info">Company Number: 9214581 VAT Registration: 258 4472 76</div>
+        </div>
+        <div class="footer__sing">
+          <div class="footer__sing-title">Sign Up</div>
+          <div class="footer__sing-info">For Fearless Futures’ Newsletter</div>
+        </div><a class="footer__btn btn btn--empty" href="mailto:example@gmail.com" target="_blank">example@gmail.com</a>
+        <div class="footer__comp img-wrap mobile--hide">
+          <div>
+            <picture><img src="assets/images/png/footer-comp.png" alt="Logo CFA ISO 27001"></picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom mobile--hide">
+    <div class="center-wrap">
+      <p class="footer__bottom-copyr">© Copyright 2021 | All right reserved Fearless Futures</p>
+    </div>
+  </div>
+</footer>
+    </div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <button class="mobile-menu__act mobile-menu__act--close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 7.05L16.95 6L12 10.95L7.05 6L6 7.05L10.95 12L6 16.95L7.05 18L12 13.05L16.95 18L18 16.95L13.05 12L18 7.05Z"></path>
+      </svg>
+    </button>
+    <div class="mobile-menu__body">
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__nav-list" role="list">
+          <li class="mobile-menu__nav-item" role="listitem"><a class="mobile-menu__nav-link" href="" role="button">About us</a></li>
+          <li class="mobile-menu__nav-item mobile-menu__nav-item--drop" role="listitem" aria-haspopup="true" aria-expanded="false" tabindex="0">
+            <p>Services</p>
+            <ul class="mobile-menu__drop mobile-menu__drop--js" role="list">
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Training</a></li>
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Consultancy</a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__nav-item" role="listitem"><a class="mobile-menu__nav-link" href="" role="button">Team</a></li>
+          <li class="mobile-menu__nav-item" role="listitem"><a class="mobile-menu__nav-link" href="" role="button">Impact</a></li>
+          <li class="mobile-menu__nav-item mobile-menu__nav-item--drop" role="listitem" aria-haspopup="true" aria-expanded="false" tabindex="0">
+            <p>Resources</p>
+            <ul class="mobile-menu__drop mobile-menu__drop--js" role="list">
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Learning Materials</a></li>
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Podcast</a></li>
+              <li class="mobile-menu__drop-item" role="listitem"><a class="mobile-menu__drop-link" href="" role="button">Blog</a></li>
+            </ul>
+          </li>
+          <li class="mobile-menu__nav-item" role="listitem"><a class="mobile-menu__nav-link" href="" role="button">FAQs</a></li>
+        </ul>
+      </nav><a class="btn mobile-menu__btn single-anchors" href="home.html#contact">Contact us</a>
+    </div>
+  </div>
+</div>
+<div class="popup-wrap" id="thank-you">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('thank-you')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Спасибо!</div>
+      <div class="popup__content content"> 
+        <p>Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1668790235662"></script></body>
+</html>
